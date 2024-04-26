@@ -1,0 +1,20 @@
+body{
+  container: fluid;
+  margin: 0;
+}
+
+.input-container {
+  display: flex; /* Establece el contenedor como un flexbox */
+  align-items: center; /* Alinea los elementos verticalmente */
+  width: 100vh;
+  height: auto;
+}
+
+.image-wrapper{
+  margin-bottom: 2.5vh;
+}
+
+
+.width-size{
+  width: 100%;
+}
