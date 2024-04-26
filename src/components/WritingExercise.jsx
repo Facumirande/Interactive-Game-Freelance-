@@ -1,18 +1,19 @@
 import Inputs from "../helpers/Inputs"
+import PropTypes from 'prop-types'; // Importa PropTypes
 
-let index = 0
 
-
-const WritingExercise = () => {
+const WritingExercise = (props) => {
+  const index = props.index
   return (
-    <section className="row">
       <div className="col-6">
       <Inputs index = {index}/>
       </div>
-      <div className="col-6">
-      <Inputs className="me-0" index = {index}/>
-      </div>
-    </section>
   )
+  
 }
+// Define PropTypes para el componente Inputs
+WritingExercise.propTypes = {
+  index: PropTypes.number.isRequired // Valida que index sea un número y sea requerido
+};
+
 export default WritingExercise
