@@ -6,8 +6,8 @@ const Inputs = (props) => {
   return (
         <div className="row width-size">
           <div className="form-floating m-3 input-wrapper me-0 col-9" style={{height: "8vh"}} >
-            <input type="text" className="form-control form-size" id="1"/>
-            <label htmlFor="1">Ingrese nombre del dispositivo</label>
+            <input type="text" className="form-control form-size" id={index}/>
+            <label className="custom-label" htmlFor={index}>Ingrese nombre del dispositivo</label>
           </div>
           <div className="image-wrapper col-1">
             <img className="ms-0" src={arrayImage[index].img} alt={"asd"} style={{height: "80px"}}/>
