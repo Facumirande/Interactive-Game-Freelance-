@@ -1,11 +1,10 @@
 import { play, playHover } from "../helpers/inputsData"
 import { useState } from 'react';
 import PropTypes from 'prop-types'; // Importa PropTypes
-import FirstPage from "./FirstPage";
 
 
 
-const Play = () => {
+const Play = ({onButtonClick}) => {
   
   const [isHovered, setIsHovered] = useState(false);
 
@@ -28,7 +27,7 @@ const Play = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{cursor: "pointer"}}
-          onClick={<FirstPage/>}
+          onClick={onButtonClick}
           id="playButtonId"
         />
       </div>
@@ -38,7 +37,7 @@ const Play = () => {
 
 Play.propTypes = {
   isPlay: PropTypes.bool.isRequired, // Valida que index sea un número y sea requerido
-  handlePlay: PropTypes.isRequired// Valida que index sea un número y sea requerido
+  onButtonClick: PropTypes.isRequired// Valida que index sea un número y sea requerido
 };
 
 export default Play
