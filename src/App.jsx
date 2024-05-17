@@ -24,21 +24,3 @@ const App = () => {
 };
 
 export default App;
-
-
-// import './App.css'
-// import FirstPage from './components/FirstPage'
-// import Play from './components/Play'
-
-
-// function App() {
-
-//   return (
-//     <>
-//         <Play />
-//         <FirstPage className="firstPageStyle" />
-//     </>
-//   );
-//   }
-
-// export default App

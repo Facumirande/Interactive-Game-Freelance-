@@ -26,7 +26,6 @@ const Play = ({onButtonClick}) => {
           className="size-button"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          style={{cursor: "pointer"}}
           onClick={onButtonClick}
           id="playButtonId"
         />

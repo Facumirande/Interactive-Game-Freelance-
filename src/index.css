@@ -66,6 +66,12 @@ body{
   height: 100vh;
 }
 
-.size-button{
-  width: 24%
-  }
+
+.size-button {
+  width: 24%;
+  transition: transform 0.05s ease-in-out;
+}
+
+.size-button:hover {
+  transform: scale(1.03);
+}
