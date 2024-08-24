@@ -10,14 +10,15 @@ import play from "../assets/img/Play.png"
 import playHover from "../assets/img/PlayHover.png"
 
 const arrayImage = [
-  { img: teclado, nombre: "teclado"},
-  { img: mouse, nombre: "mouse"},
-  { img: monitor, nombre: "monitor"},
-  { img: gabinete, nombre: "gabinete"},
-  { img: parlante, nombre: "parlante"},
-  { img: camara, nombre: "camara"},
-  { img: estabilizador, nombre: "estabilizador"},
-  { img: modem, nombre: "modem"},
+  { img: teclado, nombres: ["teclado"]},
+  { img: mouse, nombres: ["mouse","raton","ratón"]},
+  { img: monitor, nombres: ["monitor","pantalla"]},
+  { img: gabinete, nombres: ["gabinete"]},
+  { img: parlante, nombres: ["parlante","parlantes"]},
+  { img: camara, nombres: ["camara","camaras","webcam"]},
+  { img: estabilizador, nombres: ["estabilizador","regulador"]},
+  { img: modem, nombres: ["modem","módem","router"]},
 ];
 
 export { arrayImage, play, playHover };
+

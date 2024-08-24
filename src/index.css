@@ -75,3 +75,23 @@ body{
 .size-button:hover {
   transform: scale(1.03);
 }
+
+.title{
+  height: 200px;
+  text-align:center;
+  font-size: 40px;
+  color: rgb(0, 255, 47);
+  max-width: 90%;
+  /* margin-bottom: 50px; */
+  font-family: 'Press Start 2P', cursive;
+  margin-left:5%;
+}
+
+.ayudaButton{
+  font-size: 20px;
+  color: rgb(0, 255, 47);
+  max-width: 90%;
+  /* margin-bottom: 50px; */
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 2%;
+}

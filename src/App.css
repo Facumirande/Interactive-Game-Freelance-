@@ -1,0 +1,10 @@
+/* Cambia el color del borde del input cuando es válido */
+.is-valid {
+  border-color: #007bff; /* Azul fuerte (Bootstrap Primary) */
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .25); /* Sombra azul clara */
+}
+
+/* Cambia el color del ícono de validación (tilde) si usas Bootstrap Icons */
+.is-valid ~ .form-control-feedback {
+  color: #007bff; /* Azul fuerte */
+}
