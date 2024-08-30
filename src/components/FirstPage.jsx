@@ -46,7 +46,7 @@ const FirstPage = () => {
   return (
     <article className="game-background">
       <div className="inputs-style input-margin row">
-        <h1 className="title">Escribe el nombre de cada componente:</h1>
+        <h1 className="title">ESCRIBE EL NOMBRE DE CADA COMPONENTE:</h1>
         {Array.from({ length: inputCount }, (_, index) => (
           <WritingExercise 
             key={index} 
@@ -55,7 +55,7 @@ const FirstPage = () => {
           />
         ))}
         <ValidationMessage allValid={allValid} />
-        <h1 className="btn btn-primary ayudaButton" onClick={handleHelpClick}>Ayuda</h1>
+        <h1 className="btn ayudaButton" onClick={handleHelpClick}>AYUDA</h1>
       </div>
     </article>
   );

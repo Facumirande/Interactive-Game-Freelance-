@@ -1,6 +1,5 @@
-body{
+body {
   overflow-x: hidden;
-  container: fluid;
   margin: 0;
   height: 100vh;
 }
@@ -8,64 +7,58 @@ body{
 .input-container {
   display: flex; /* Establece el contenedor como un flexbox */
   align-items: center; /* Alinea los elementos verticalmente */
-  width: 100vh;
+  width: 100%; /* Corrige el ancho */
   height: auto;
 }
 
-.image-wrapper{
+.image-wrapper {
   margin-bottom: 2.5vh;
 }
 
-
-.width-size{
+.width-size {
   width: 100%;
 }
 
-.inputs-style{
+.inputs-style {
   height: 100vh;
   display: flex;
   align-content: center;
-  
 }
 
-.custom-label{
+.custom-label {
   margin-left: 3%;
   margin-top: -1%;
-  
 }
 
-
-.appStyle{
+.appStyle {
   height: 100vh;
   justify-content: center;
-  
 }
 
-.input-margin{
+.input-margin {
   margin-left: 2%;
   margin-right: 1%;
 }
 
-.game-background{
+.game-background {
   background-image: url("./assets/img/Backgound.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.play-background{
+.play-background {
   background-image: url("./assets/img/Backgound1.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-.play-button{
+.play-button {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-
 
 .size-button {
   width: 24%;
@@ -76,28 +69,27 @@ body{
   transform: scale(1.03);
 }
 
-.title{
+.title {
   height: 200px;
-  text-align:center;
+  text-align: center;
   font-size: 40px;
   color: rgb(0, 255, 47);
   max-width: 90%;
-  /* margin-bottom: 50px; */
   font-family: 'Press Start 2P', cursive;
-  margin-left:5%;
+  margin-left: 5%;
 }
 
-.ayudaButton{
-  font-size: 20px;
+.ayudaButton {
+  font-size: 17px;
   color: rgb(0, 255, 47);
+  width: 200px;
   max-width: 90%;
-  /* margin-bottom: 50px; */
   font-family: 'Press Start 2P', cursive;
   margin-top: 2%;
   transition: transform 0.1s ease-in-out;
   background-color: transparent;
   border: 0;
-
+  left: 30px;
 }
 
 .ayudaButton:hover {
@@ -106,27 +98,40 @@ body{
   background-color: transparent;
   border: 0;
   animation: none;
+  transform: scale(1.1);
 }
 
-.custom-alert-title{
+.custom-alert-title {
   font-family: 'Press Start 2P', cursive;
   color: rgb(0, 255, 47);
+  line-height: 50px;
 }
 
 .custom-alert-backdrop {
   background: url('./assets/img/confetti.gif');
 }
 
-.custom-confirm-button{
-  .custom-confirm-button {
-    background-color: #4CAF50; /* Cambia el color de fondo del botón */
-    color: white; /* Cambia el color del texto del botón */
-    border: none; /* Opcional: elimina el borde del botón */
-    border-radius: 5px; /* Opcional: añade bordes redondeados */
-  }
-  
-  .custom-confirm-button:hover {
-    background-color: #45a049; /* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
-  }
-  
+.custom-confirm-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: xx-large;
+  color: rgb(0, 225, 47); /* Cambia el color del texto del botón */
+  background-color: transparent; /* Cambia el color de fondo del botón */
+  border: none;
+  border-radius: none;
+}
+
+.custom-confirm-button:hover {
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(0, 255, 47);
+  background-color: transparent; /* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
+  transform: scale(1.2);
+}
+
+.custom-alert-border{
+  border: 30px;
+}
+
+.img-hover:hover{
+  transform: scale(2);
+  box-shadow: 30px;
 }

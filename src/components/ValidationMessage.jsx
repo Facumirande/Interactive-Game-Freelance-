@@ -6,7 +6,7 @@ const ValidationMessage = ({ allValid }) => {
   // Ejecuta Swal.fire cuando allValid es verdadero
   if (allValid) {
     Swal.fire({
-      title: `¡Felicidades, ganaste!`,
+      title: `¡GANASTE!`,
       width: 540,
       color: "rgb(0, 0, 0)",
       background: "#000",
@@ -15,10 +15,12 @@ const ValidationMessage = ({ allValid }) => {
         center top
         no-repeat
       `,
+      confirmButtonColor:"rgb(0,0,0)",
       customClass: {
         title: 'custom-alert-title', // Usa la clase personalizada para el título
         backdrop: 'custom-alert-backdrop',
         confirmButton: 'custom-confirm-button',
+        border: 'custom-alert-border'
       },
     });
   }
