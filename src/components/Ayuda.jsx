@@ -39,7 +39,12 @@ const FirstPage = () => {
           )).join('')}
         </ul>
       `,
-      confirmButtonText: 'Cerrar'
+      confirmButtonText: 'Cerrar',
+      customClass: {
+        title: 'custom-alert-title', // Usa la clase personalizada para el título
+        backdrop: 'custom-alert-backdrop',
+        confirmButton: 'custom-confirm-button',
+      },
     });
   };
 
@@ -55,7 +60,7 @@ const FirstPage = () => {
           />
         ))}
         <ValidationMessage allValid={allValid} />
-        <h1 className="btn btn-primary ayudaButton" onClick={handleHelpClick}>Ayuda</h1>
+        <h1 className="button ayudaButton" onClick={handleHelpClick}>Ayuda</h1>
       </div>
     </article>
   );

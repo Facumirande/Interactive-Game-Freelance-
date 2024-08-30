@@ -94,4 +94,39 @@ body{
   /* margin-bottom: 50px; */
   font-family: 'Press Start 2P', cursive;
   margin-top: 2%;
+  transition: transform 0.1s ease-in-out;
+  background-color: transparent;
+  border: 0;
+
+}
+
+.ayudaButton:hover {
+  color: red;
+  transform: scale(1.02);
+  background-color: transparent;
+  border: 0;
+  animation: none;
+}
+
+.custom-alert-title{
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(0, 255, 47);
+}
+
+.custom-alert-backdrop {
+  background: url('./assets/img/confetti.gif');
+}
+
+.custom-confirm-button{
+  .custom-confirm-button {
+    background-color: #4CAF50; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    border: none; /* Opcional: elimina el borde del botón */
+    border-radius: 5px; /* Opcional: añade bordes redondeados */
+  }
+  
+  .custom-confirm-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo cuando se pasa el ratón sobre el botón */
+  }
+  
 }

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Play from './components/Play.jsx'
 import FirstPage from './components/FirstPage.jsx'; // Asegúrate de que la ruta sea correcta
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   // Estado que controla la visualización de FirstPage

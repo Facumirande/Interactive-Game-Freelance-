@@ -8,6 +8,8 @@ import estabilizador from "../assets/img/Estabilizador.png";
 import modem from "../assets/img/Modem.png";
 import play from "../assets/img/Play.png"
 import playHover from "../assets/img/PlayHover.png"
+import confetti from "../assets/img/confetti.gif"
+import winButton from "../assets/img/win-button.png"
 
 const arrayImage = [
   { img: teclado, nombres: ["teclado"]},
@@ -20,5 +22,5 @@ const arrayImage = [
   { img: modem, nombres: ["modem","módem","router"]},
 ];
 
-export { arrayImage, play, playHover };
+export { arrayImage, play, playHover, confetti, winButton };
 
