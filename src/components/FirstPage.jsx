@@ -2,6 +2,7 @@ import { useState } from 'react';
 import WritingExercise from './WritingExercise'; // Ajusta la ruta según tu estructura de carpetas
 import ValidationMessage from './ValidationMessage'; // Importa el nuevo componente de validación
 import Swal from 'sweetalert2'; // Importa SweetAlert2
+import TimerComponent from './Timer.jsx';
 
 const helpContent = {
   teclado: "El teclado es el dispositivo de entrada que permite al usuario introducir texto y comandos en el ordenador.",
@@ -46,7 +47,7 @@ const FirstPage = () => {
   return (
     <article className="game-background">
       <div className="inputs-style input-margin row">
-        <h1 className="title">ESCRIBE EL NOMBRE DE CADA COMPONENTE:</h1>
+        <h1 className="title">ESCRIBE EL NOMBRE DE CADA COMPONENTE:</h1>   
         {Array.from({ length: inputCount }, (_, index) => (
           <WritingExercise 
             key={index} 
@@ -55,7 +56,12 @@ const FirstPage = () => {
           />
         ))}
         <ValidationMessage allValid={allValid} />
+        <h1 className="resetButton" onClick={handleHelpClick}>REINICIAR</h1>
         <h1 className="btn ayudaButton" onClick={handleHelpClick}>AYUDA</h1>
+        <h1 className="btn ayudaButton" onClick={handleHelpClick}>MEJORES TIEMPOS</h1>
+        <div className='time'>
+        <TimerComponent />
+        </div>  
       </div>
     </article>
   );

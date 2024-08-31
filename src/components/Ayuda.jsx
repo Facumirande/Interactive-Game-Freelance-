@@ -35,7 +35,7 @@ const FirstPage = () => {
       html: `
         <ul>
           ${Object.entries(helpContent).map(([key, description]) => (
-            `<li><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${description}</li>`
+            `<li"><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${description}</li>`
           )).join('')}
         </ul>
       `,
