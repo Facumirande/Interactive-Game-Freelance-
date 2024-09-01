@@ -19,7 +19,7 @@ const helpContent = {
 const FirstPage = () => {
   const inputCount = 8;
   const [validStates, setValidStates] = useState(new Array(inputCount).fill(false));
-  const { milliseconds, startTimer, stopTimer, resetTimer } = useTimer();
+  const { milliseconds, stopTimer } = useTimer();
   const inputRefs = useRef([]);
 
   const handleValidStateChange = (index, isValid) => {
