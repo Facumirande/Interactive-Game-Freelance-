@@ -16,6 +16,7 @@ const ValidationMessage = ({ allValid }) => {
         no-repeat
       `,
       confirmButtonColor:"rgb(0,0,0)",
+      html:`<h1 style="color:white">hola</h1>`,
       customClass: {
         title: 'custom-alert-title', // Usa la clase personalizada para el título
         backdrop: 'custom-alert-backdrop',

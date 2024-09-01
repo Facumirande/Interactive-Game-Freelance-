@@ -56,9 +56,11 @@ const FirstPage = () => {
           />
         ))}
         <ValidationMessage allValid={allValid} />
-        <h1 className="resetButton" onClick={handleHelpClick}>REINICIAR</h1>
+        <div className="buttonsPosition">
+        <h1 className="btn resetButton" onClick={handleHelpClick}>REINICIAR</h1>
         <h1 className="btn ayudaButton" onClick={handleHelpClick}>AYUDA</h1>
         <h1 className="btn ayudaButton" onClick={handleHelpClick}>MEJORES TIEMPOS</h1>
+        </div>
         <div className='time'>
         <TimerComponent />
         </div>  

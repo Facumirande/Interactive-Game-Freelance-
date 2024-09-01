@@ -12,7 +12,7 @@ const Inputs = (props) => {
           type="text"
           className={`form-control form-size ${isValid ? 'is-valid' : ''}`} // Aplica la clase is-valid si es válido
           id={`input-${index}`}
-          value={value} // El valor del input se establece aquí
+          value={value.toUpperCase()} // El valor del input se establece aquí
           onChange={onChange} // Maneja el cambio del input
         />
         <label className="custom-label" htmlFor={`input-${index}`}>INGRESE EL NOMBRE DEL DISPOSITIVO</label>

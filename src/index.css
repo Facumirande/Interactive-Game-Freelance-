@@ -129,7 +129,6 @@ body {
   max-width: 90%;
   font-family: 'Press Start 2P', cursive;
   margin-top: 2%;
-  padding-top: 10px;
   padding-right: 0px;
   transition: transform 0.1s ease-in-out;
   background-color: transparent;
@@ -167,4 +166,8 @@ body {
   border: 0;
   animation: none;
   transform: scale(1.1);
+}
+
+.buttonsPosition{
+  margin-left: 40px;
 }

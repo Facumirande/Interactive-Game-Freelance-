@@ -17,7 +17,7 @@ const arrayImage = [
   { img: monitor, nombres: ["monitor","pantalla"]},
   { img: gabinete, nombres: ["gabinete"]},
   { img: parlante, nombres: ["parlante","parlantes"]},
-  { img: camara, nombres: ["camara","camaras","webcam"]},
+  { img: camara, nombres: ["camara","camaras","webcam", "camara web", "cámara web"]},
   { img: estabilizador, nombres: ["estabilizador","regulador"]},
   { img: modem, nombres: ["modem","módem","router"]},
 ];
