@@ -1,4 +1,4 @@
-import useTimer from '../helpers/Timer.js'; // Asegúrate de que la ruta es correcta
+import useTimer from '../helpers/Timer.js' // Asegúrate de que la ruta es correcta
 
 const TimerComponent = () => {
   const milliseconds = useTimer();
